@@ -12,8 +12,8 @@ const mainLinks = [
 ];
 
 const booksDropdown = [
+  { href: '/buy-now', label: 'Buy now' },
   { href: '/buy-on-amazon', label: 'Buy on Amazon' },
-  { href: '/buy-now', label: 'Book Shop' },
 ];
 
 export default function ModernNavbar() {
