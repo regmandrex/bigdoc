@@ -49,7 +49,7 @@ export default function HomePage() {
               Helping You Achieve Success
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600 md:mt-4 md:text-base">
-              Abuja-based consultant pediatric surgeon, author, pastor and consultant guiding you toward wholeness in every
+              Abuja-based consultant pediatric surgeon, author and pastor guiding you toward wholeness in every
               area of life.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-3 md:justify-start">
