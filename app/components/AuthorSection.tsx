@@ -8,7 +8,7 @@ export default function AuthorSection() {
           Author of Great Books
         </h2>
         <p className="mt-4 text-sm text-gray-700">
-          Dr. Samson Olori is a Pediatric Surgeon who also cares for not just the body but also the
+          Dr. Samson Olori is a Consultant Pediatric Surgeon who also cares for not just the body but also the
           spirit man. He is a voice in the health sector and is on the track to making positive
           impacts on the spiritual lives of many by preaching, teaching, and sharing the gospel
           around.
