@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | Dr Samson Olori',
   },
   description:
-    'Dr. Samson Olori is one of the best doctors and surgeons in Nigeria—Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Abuja and across Nigeria.',
+    'Dr. Samson Olori is one of the best doctors and surgeons in Nigeria—Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Lagos, Abuja and across Nigeria.',
   keywords: [
     'best doctor in Nigeria',
     'best surgeon in Nigeria',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
     description:
-      'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Abuja and across Nigeria.',
+      'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Lagos, Abuja and across Nigeria.',
     url: 'https://drsamsonolori.com',
     siteName: 'Dr Samson Olori',
     type: 'website',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
     description:
-      'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Abuja.',
+      'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Lagos, Abuja and across Nigeria.',
   },
   icons: {
     icon: [
@@ -74,7 +74,7 @@ export default function RootLayout({
     '@type': 'Physician',
     name: 'Dr. Samson Olori',
     jobTitle: 'Consultant Pediatric Surgeon, Medical Consultant, Author',
-    description: 'One of the best doctors and surgeons in Nigeria. Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Abuja and across Nigeria.',
+    description: 'One of the best doctors and surgeons in Nigeria. Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Lagos, Abuja and across Nigeria.',
     url: 'https://drsamsonolori.com',
     image: 'https://drsamsonolori.com/assets/images/ochuko-2.png',
     sameAs: [],

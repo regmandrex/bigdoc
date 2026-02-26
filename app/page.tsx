@@ -120,7 +120,7 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
-            Dr. Samson Olori is among the best doctors and surgeons in Nigeria—Abuja-based expert in the health sector, surgeon and consultant as well as a prophet. A lead surgeon in multiple successful procedures, he cares for both body and spirit—bringing medical expertise together with spiritual guidance. Expert care in Abuja and across Nigeria.
+            Dr. Samson Olori is among the best doctors and surgeons in Nigeria—Abuja-based expert in the health sector, surgeon and consultant as well as a prophet. A lead surgeon in multiple successful procedures, he cares for both body and spirit—bringing medical expertise together with spiritual guidance. Expert care in Lagos, Abuja and across Nigeria.
           </p>
 
           <div className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2">
