@@ -92,6 +92,7 @@ export default function FeaturedOn() {
                   alt={`${item.longName} logo`}
                   width={item.width ?? 120}
                   height={item.height ?? 40}
+                  loading="lazy"
                   className="h-9 w-auto max-w-[140px] object-contain sm:h-10 md:h-12 md:max-w-none"
                 />
               ) : (

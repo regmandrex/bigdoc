@@ -2,6 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FeaturedOn from './components/FeaturedOn';
 
+// Tiny gray blur for smooth image load (no white flash)
+const BLUR_DATA =
+  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQACEQADAPEA/9k=';
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-50">
@@ -11,26 +15,30 @@ export default function HomePage() {
           <div className="order-1 w-full md:order-2 md:flex-1 md:max-w-md">
             <div className="relative w-full md:mx-auto md:max-w-sm">
               {/* Mobile: pre-cropped image (head + lapels only) */}
-              <div className="relative w-full md:hidden">
+              <div className="relative w-full md:hidden bg-slate-200">
                 <Image
                   src="/assets/images/ochuko-2-mobile.png?v=6"
                   alt="Dr Samson Olori"
                   width={520}
                   height={416}
                   quality={92}
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA}
                   className="h-auto w-full object-cover object-top"
                   priority
                   sizes="100vw"
                 />
               </div>
               {/* Desktop: full portrait */}
-              <div className="relative hidden aspect-[13/16] w-full md:block">
+              <div className="relative hidden aspect-[13/16] w-full bg-slate-200 md:block">
                 <Image
                   src="/assets/images/ochuko-2.png"
                   alt="Dr Samson Olori"
                   width={520}
                   height={640}
                   quality={92}
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA}
                   className="h-full w-full object-cover object-top"
                   priority
                   sizes="384px"
@@ -205,12 +213,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-5 sm:gap-6 md:flex-row">
-              <div className="w-full max-w-[200px] rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:max-w-[220px] md:max-w-[260px]">
+              <div className="w-full max-w-[200px] rounded-2xl border border-slate-200 bg-slate-100 p-4 shadow-sm sm:max-w-[220px] md:max-w-[260px]">
                 <Image
                   src="/assets/images/prosperity-olori.png"
                   alt="Faith For Prosperity: The Missing Link"
                   width={260}
                   height={360}
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA}
                   className="h-auto w-full rounded-md object-contain"
                 />
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
@@ -218,12 +228,14 @@ export default function HomePage() {
                 </p>
                 <p className="mt-1 text-sm font-medium text-slate-900">The Missing Link</p>
               </div>
-              <div className="w-full max-w-[200px] rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:max-w-[220px] md:max-w-[260px]">
+              <div className="w-full max-w-[200px] rounded-2xl border border-slate-200 bg-slate-100 p-4 shadow-sm sm:max-w-[220px] md:max-w-[260px]">
                 <Image
                   src="/assets/images/blessing-olori.png"
                   alt="Inherit A Blessing"
                   width={260}
                   height={360}
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA}
                   className="h-auto w-full rounded-md object-contain"
                 />
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">

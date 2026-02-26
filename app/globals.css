@@ -16,3 +16,8 @@ body {
 body {
   @apply bg-white text-gray-900 antialiased;
 }
+
+/* Smoother image appearance (Next.js Image uses placeholder blur) */
+img {
+  @apply transition-opacity duration-500 ease-out;
+}

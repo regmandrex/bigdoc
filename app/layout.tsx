@@ -42,12 +42,21 @@ export const metadata: Metadata = {
     url: 'https://drsamsonolori.com',
     siteName: 'Dr Samson Olori',
     type: 'website',
+    images: [
+      {
+        url: '/assets/images/ochuko-2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Dr Samson Olori – Consultant paediatric surgeon, author and pastor',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
     description:
       'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Lagos, Abuja and across Nigeria.',
+    images: ['/assets/images/ochuko-2.png'],
   },
   icons: {
     icon: [
