@@ -251,13 +251,21 @@ export default function HomePage() {
                 guidance, spiritual counsel, or both.
               </p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row sm:gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-3">
               <Link
                 href="/about"
                 className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full bg-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-slate-950 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950 sm:w-auto"
               >
                 Let&apos;s Talk
               </Link>
+              <a
+                href="https://calendly.com/drsamsonolori"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full bg-orange-500 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-slate-950 sm:w-auto"
+              >
+                Book a consultation
+              </a>
               <Link
                 href="/buy-now"
                 className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full border border-slate-600 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-slate-100 transition hover:border-slate-400 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-950 sm:w-auto"

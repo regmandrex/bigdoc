@@ -118,12 +118,22 @@ export default function AboutContent() {
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-300 md:text-base">
             Share your situation and let&apos;s explore a path forward together.
           </p>
-          <Link
-            href="/"
-            className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-950 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950 sm:mt-10"
-          >
-            Let&apos;s Talk
-          </Link>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-3 sm:mt-10">
+            <Link
+              href="/"
+              className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-950 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
+            >
+              Let&apos;s Talk
+            </Link>
+            <a
+              href="https://calendly.com/drsamsonolori"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+            >
+              Book a consultation
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/assets/icons/cropped-favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/assets/icons/cropped-favicon-180x180.png', sizes: '180x180', type: 'image/png' },
-      { url: '/assets/icons/cropped-favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/assets/icons/medical-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/assets/icons/medical-logo.png', sizes: '180x180', type: 'image/png' },
+      { url: '/assets/icons/medical-logo.png', sizes: '192x192', type: 'image/png' },
     ],
   },
 };

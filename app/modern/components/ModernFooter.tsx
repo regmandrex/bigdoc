@@ -1,4 +1,6 @@
 export default function ModernFooter() {
+  const calendlyUrl = 'https://calendly.com/drsamsonolori'; // Replace with your Calendly link
+
   return (
     <footer className="border-t border-slate-200 bg-slate-950 text-slate-200">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-5 md:px-6 pb-[max(2rem,env(safe-area-inset-bottom))]">
@@ -9,6 +11,16 @@ export default function ModernFooter() {
             </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-300">
               Consultant pediatric surgeon, author and pastor helping you thrive in health and spirit.
+            </p>
+            <p className="mt-3 text-sm">
+              <a
+                href={calendlyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-orange-400 underline decoration-orange-400/50 underline-offset-2 hover:text-orange-300 hover:decoration-orange-300"
+              >
+                Book a consultation →
+              </a>
             </p>
           </div>
           <div className="flex flex-wrap gap-2 sm:gap-4">
