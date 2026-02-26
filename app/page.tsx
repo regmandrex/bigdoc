@@ -46,7 +46,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="order-2 flex-1 w-full px-0 pb-10 pt-6 text-center sm:px-5 sm:pb-0 md:order-1 md:px-0 md:text-left">
+          <div className="order-2 flex-1 w-full px-0 pb-10 pt-2 text-center sm:px-5 sm:pt-6 sm:pb-0 md:order-1 md:px-0 md:text-left">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-base sm:tracking-[0.25em]">
               I&apos;m Dr Samson Olori
             </p>
