@@ -36,6 +36,13 @@ const featured: Array<{
     height: 48,
   },
   {
+    name: 'MDCN',
+    longName: 'Medical and Dental Council of Nigeria',
+    logo: '/assets/featured/mdcn.png',
+    width: 56,
+    height: 56,
+  },
+  {
     name: 'Premium Times',
     longName: 'Premium Times',
     logo: '/assets/featured/premium-times.png',
