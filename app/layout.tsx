@@ -100,6 +100,18 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="preload" href="/assets/images/logo-1.png" as="image" />
+        <link
+          rel="preload"
+          href="/assets/images/ochuko-2-mobile.png?v=6"
+          as="image"
+          media="(max-width: 767px)"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/ochuko-2.png"
+          as="image"
+          media="(min-width: 768px)"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
