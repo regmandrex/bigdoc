@@ -54,11 +54,11 @@ export default function HomePage() {
               Author, Paediatric Surgeon, Pastor And Consultant
             </p>
             <h1 className="mt-3 font-heading text-2xl font-bold leading-tight tracking-tight text-slate-950 sm:mt-4 sm:text-3xl md:text-4xl lg:text-5xl">
-              Helping You Achieve Success
+              Consultant Paediatric Surgeon - Expert Surgical Care
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600 md:mt-4 md:text-base">
-              Abuja-based consultant pediatric surgeon, author and pastor guiding you toward wholeness in every
-              area of life.
+              Specialised in complex neonatal and paediatric surgical care, with decades of experience serving families
+              across Nigeria.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-3 md:justify-start">
               <Link
