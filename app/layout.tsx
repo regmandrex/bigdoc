@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://drsamsonolori.com'),
   title: {
-    default: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
+    default: 'Dr Samson Olori | Consultant Paediatric Surgeon | Abuja, Nigeria',
     template: '%s | Dr Samson Olori',
   },
   description:
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     'Abuja surgeon',
   ],
   openGraph: {
-    title: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
+    title: 'Dr Samson Olori | Consultant Paediatric Surgeon | Abuja, Nigeria',
     description:
       'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Lagos, Abuja and across Nigeria.',
     url: 'https://drsamsonolori.com',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr Samson Olori | Best Doctor & Surgeon in Nigeria',
+    title: 'Dr Samson Olori | Consultant Paediatric Surgeon | Abuja, Nigeria',
     description:
       'Abuja-based consultant pediatric surgeon, author and pastor. Among the best doctors and surgeons in Nigeria. Expert care in Lagos, Abuja and across Nigeria.',
     images: ['/assets/images/ochuko-2.png'],
@@ -82,7 +82,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Physician',
     name: 'Dr. Samson Olori',
-    jobTitle: 'Consultant Pediatric Surgeon, Medical Consultant, Author',
+    jobTitle: 'Chief Consultant Paediatric Surgeon, Medical Doctor, Author',
     description:
       'One of the best doctors and surgeons in Nigeria. Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Lagos, Abuja and across Nigeria.',
     url: 'https://drsamsonolori.com',
@@ -110,6 +110,38 @@ export default function RootLayout({
       { '@type': 'City', name: 'Lagos' },
     ],
     address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'University of Benin',
+        address: { '@type': 'PostalAddress', addressCountry: 'NG' },
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'University of Jos Teaching Hospital',
+        address: { '@type': 'PostalAddress', addressLocality: 'Jos', addressCountry: 'NG' },
+      },
+    ],
+    worksFor: {
+      '@type': 'Hospital',
+      name: 'University of Abuja Teaching Hospital',
+      address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
+    },
+    affiliation: {
+      '@type': 'Hospital',
+      name: 'University of Abuja Teaching Hospital',
+      address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
+    },
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'West African College of Surgeons (WACS)',
+      },
+      {
+        '@type': 'Organization',
+        name: 'Association of Paediatric Surgeons of Nigeria (APSON)',
+      },
+    ],
   };
 
   return (

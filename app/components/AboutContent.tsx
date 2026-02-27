@@ -12,22 +12,34 @@ export default function AboutContent() {
             Dr Samson Olori
           </h1>
           <p className="mt-4 text-base font-medium text-slate-600 sm:text-lg">
-            Medical Doctor / Author · Abuja
+            Chief Consultant Paediatric Surgeon · University of Abuja Teaching Hospital
           </p>
           <div className="mt-8 max-w-3xl space-y-5 text-slate-700 leading-relaxed sm:mt-10 sm:space-y-6 sm:text-base">
             <p>
-              Dr. Samson Olori is an expert in the health sector, surgeon and consultant as well as a
-              prophet. He is a medical doctor in Abuja and across Nigeria.
+              Dr Samson Olori, MBBS, FWACS, is widely regarded among the leading paediatric surgeons in
+              Nigeria. He is a Fellow of the West African College of Surgeons in Paediatric Surgery and
+              Chief Consultant Paediatric Surgeon at the University of Abuja Teaching Hospital (UATH),
+              where he established the Division of Paediatric Surgery in 2007.
             </p>
             <p>
-              A medical doctor and lead surgeon in multiple successful surgeries, he brings both
-              clinical excellence and spiritual insight to his work from his base in Abuja.
+              He completed his residency training at the University of Jos Teaching Hospital, with
+              paediatric surgery rotations at Ahmadu Bello University Teaching Hospital, Zaria, and
+              Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife. In 2019 he received a
+              scholarship to train in paediatric urology and laparoscopy at Chang Gung Memorial
+              Hospital, Taiwan.
             </p>
             <p>
-              Dr. Samson Olori is a consultant pediatric surgeon who also cares for not just the body but also
-              the spirit. He is a voice in the health sector and is on the track to making positive
-              impacts on the spiritual lives of many by preaching, teaching, and sharing the gospel
-              around.
+              Dr Olori currently serves as Vice President of the Association of Paediatric Surgeons of
+              Nigeria (APSON) and coordinates APSON&apos;s update course for candidates preparing for the
+              West African College of Surgeons and National Postgraduate Medical College of Nigeria
+              final examinations in paediatric surgery. At UATH he has served as Head of the
+              Department of Surgery (2012–2014), Head of the Division of Paediatric Surgery
+              (2008–2016) and Coordinator of postgraduate training in surgery (2009–2012).
+            </p>
+            <p>
+              He is a devoted Christian who believes in salvation through faith in Jesus Christ and is
+              passionate about children with congenital anomalies. He enjoys reading, teaching and
+              writing Christian literature.
             </p>
           </div>
           <div className="mt-10 flex flex-col gap-3 sm:mt-12 sm:flex-row sm:flex-wrap sm:gap-4">
