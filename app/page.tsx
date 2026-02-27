@@ -167,6 +167,66 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Media & recognition – hospital bulletin + research */}
+          <div className="mt-12 grid gap-6 border-t border-slate-200 pt-10 sm:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] sm:gap-8">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+                Media &amp; recognition
+              </p>
+              <h3 className="mt-3 font-heading text-xl font-semibold tracking-tight text-slate-950 sm:text-2xl">
+                Conjoined twins separation at University of Abuja Teaching Hospital
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+                In 2018, Dr. Samson Olori led the multidisciplinary team at University of Abuja Teaching
+                Hospital in the successful separation of conjoined twins—the first such feat in the
+                hospital&apos;s history. The surgery involved months of planning, specialist input and a
+                30-person team in theatre.
+              </p>
+              <div className="mt-4">
+                <a
+                  href="/media/uath-conjoined-twins-bulletin.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex min-h-[44px] items-center justify-center rounded-full border border-slate-300 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+                >
+                  Read UATH hospital bulletin (PDF)
+                </a>
+              </div>
+            </div>
+            <div className="space-y-3 text-sm text-slate-600">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Research &amp; global surgery
+              </p>
+              <p>
+                Dr. Olori contributes to global surgery research through collaborations such as the NIHR
+                Global Surgery Unit and multicentre studies on congenital anomalies, cancer outcomes and
+                surgical site infections.
+              </p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>
+                  <a
+                    href="https://www.nihrgsulagoshub.org/team-samson.html"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-slate-900 underline decoration-slate-400/70 underline-offset-2 hover:text-slate-700"
+                  >
+                    NIHR Global Surgery – Lagos Hub profile
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.researchgate.net/scientific-contributions/Dr-Samson-Olori-2320791671"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-slate-900 underline decoration-slate-400/70 underline-offset-2 hover:text-slate-700"
+                  >
+                    Selected research on congenital anomalies &amp; pediatric surgery
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="mt-6">
             <div className="relative overflow-hidden rounded-2xl bg-slate-900 px-6 py-8 text-white md:px-10 md:py-10">
               <span className="absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full bg-white/5" aria-hidden />
