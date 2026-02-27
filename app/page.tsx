@@ -80,6 +80,229 @@ export default function HomePage() {
 
       <FeaturedOn />
 
+      {/* Services card grid (Surjen-style) – Book consultation first, broader surgery, catchier colors */}
+      <section className="border-b border-sky-100 bg-gradient-to-b from-sky-50/80 to-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
+            Our services
+          </p>
+          <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-slate-800 sm:text-3xl">
+            How we can help you
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
+            Surgical care, medical consulting, faith-based books, and spiritual guidance—in Abuja, Lagos and across Nigeria.
+          </p>
+          <div className="mt-8 grid gap-5 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {/* 1. Book a consultation – first and primary */}
+            <div className="group flex flex-col rounded-2xl border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50/80 p-6 shadow-sm transition hover:border-orange-300 hover:shadow-md sm:p-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-100 text-orange-600" aria-hidden>
+                <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              </span>
+              <h3 className="mt-4 font-heading text-lg font-semibold tracking-tight text-slate-800">
+                Book a consultation
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Schedule a one-on-one—medical guidance, spiritual counsel, or both.
+              </p>
+              <a
+                href="https://calendly.com/drsamsonolori"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-orange-500 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-orange-600"
+              >
+                Book now →
+              </a>
+            </div>
+            {/* 2. Surgery – broad (not only paediatric) */}
+            <div className="group flex flex-col rounded-2xl border border-sky-200 bg-white p-6 shadow-sm transition hover:border-sky-300 hover:shadow-md sm:p-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-600 transition group-hover:bg-sky-200" aria-hidden>
+                <Image
+                  src="/assets/icons/medical-logo.png"
+                  alt=""
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 object-contain"
+                />
+              </span>
+              <h3 className="mt-4 font-heading text-lg font-semibold tracking-tight text-slate-800">
+                Surgery & surgical care
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Expert surgical care—paediatric and general surgery, including neonatal and complex procedures.
+              </p>
+              <Link
+                href="/about"
+                className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-sky-600"
+              >
+                Enquire now →
+              </Link>
+            </div>
+            {/* 3. Medical consulting */}
+            <div className="group flex flex-col rounded-2xl border border-sky-200 bg-white p-6 shadow-sm transition hover:border-sky-300 hover:shadow-md sm:p-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-600 transition group-hover:bg-sky-200" aria-hidden>
+                <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+              </span>
+              <h3 className="mt-4 font-heading text-lg font-semibold tracking-tight text-slate-800">
+                Medical consulting
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Personalised medical counsel for complex surgical and general health questions.
+              </p>
+              <Link
+                href="/about"
+                className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-sky-600"
+              >
+                Enquire now →
+              </Link>
+            </div>
+            {/* 4. Books – black & white styling */}
+            <div className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md sm:p-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 transition group-hover:bg-slate-200" aria-hidden>
+                <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              </span>
+              <h3 className="mt-4 font-heading text-lg font-semibold tracking-tight text-slate-800">
+                Books
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Faith For Prosperity, Inherit A Blessing—faith-filled resources for your journey.
+              </p>
+              <Link
+                href="/buy-now"
+                className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-slate-900 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-slate-800"
+              >
+                Get a copy →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works + typical cases (Surjen-style, no pricing) */}
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600 text-center">
+            Hassle-free care
+          </p>
+          <h2 className="mt-3 text-center font-heading text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Looking for hassle-free surgery or specialist care in Nigeria?
+          </h2>
+
+          {/* Steps – how it works (icon-based like Surjen, no numbers) */}
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                {/* Icon: form/query */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <rect x="5" y="3" width="14" height="18" rx="2" />
+                  <path d="M9 7h6M8 11h4M8 15h3" />
+                </svg>
+              </span>
+              <p className="mt-3 text-sm font-semibold text-slate-900">Send your medical query</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Share your child&apos;s or loved one&apos;s situation and any reports you have.
+              </p>
+            </div>
+            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                {/* Icon: doctor review */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <circle cx="12" cy="7" r="3" />
+                  <path d="M6 19v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1" />
+                  <path d="M10 11.5h4" />
+                </svg>
+              </span>
+              <p className="mt-3 text-sm font-semibold text-slate-900">We review your case</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Dr. Olori evaluates your query and advises tests or next steps.
+              </p>
+            </div>
+            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                {/* Icon: calendar / schedule */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <rect x="4" y="5" width="16" height="15" rx="2" />
+                  <path d="M9 3v4M15 3v4M4 10h16" />
+                </svg>
+              </span>
+              <p className="mt-3 text-sm font-semibold text-slate-900">We plan your visit</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Agree a suitable hospital, date and team for any needed procedure.
+              </p>
+            </div>
+            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                {/* Icon: hospital / surgery */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <rect x="5" y="4" width="14" height="16" rx="2" />
+                  <path d="M12 8v6M9 11h6" />
+                </svg>
+              </span>
+              <p className="mt-3 text-sm font-semibold text-slate-900">Surgery &amp; hospital care</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                You receive compassionate, expert care at the selected centre.
+              </p>
+            </div>
+            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm sm:col-span-3 lg:col-span-1">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                {/* Icon: heart / follow-up */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <path d="M12.1 19.2 12 19.3l-0.1-0.1C7 15.3 4 12.6 4 9.5 4 7.5 5.5 6 7.5 6c1.3 0 2.6.7 3.3 1.9C11.9 6.7 13.2 6 14.5 6 16.5 6 18 7.5 18 9.5c0 3.1-3 5.8-5.9 9.7Z" />
+                </svg>
+              </span>
+              <p className="mt-3 text-sm font-semibold text-slate-900">Follow-up &amp; support</p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Post-surgery reviews, wound care and long-term follow-up as needed.
+              </p>
+            </div>
+          </div>
+
+          {/* Typical cases – horizontal scroll cards, no pricing */}
+          <div className="mt-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Typical cases we see
+            </p>
+            <div className="mt-4 -mx-4 overflow-x-auto pb-2 sm:mx-0 sm:overflow-visible">
+              <div className="flex gap-4 px-4 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-0">
+                {[
+                  {
+                    title: 'Congenital anomalies',
+                    body: 'Conditions present from birth such as abdominal wall defects, intestinal obstruction and more.',
+                  },
+                  {
+                    title: 'Neonatal & infant surgery',
+                    body: 'Specialised surgery for newborns and infants requiring early intervention.',
+                  },
+                  {
+                    title: 'Paediatric tumours',
+                    body: 'Evaluation and surgical care for childhood tumours in collaboration with oncology teams.',
+                  },
+                  {
+                    title: 'Second opinions',
+                    body: 'Clarifying diagnoses, treatment options and timing of surgery for complex cases.',
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="flex min-w-[260px] flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:border-sky-300 hover:shadow-md"
+                  >
+                    <p className="text-sm font-semibold text-slate-900">{item.title}</p>
+                    <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-600">{item.body}</p>
+                    <a
+                      href="https://calendly.com/drsamsonolori"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="mt-4 inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-600"
+                    >
+                      Schedule a consultation →
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">

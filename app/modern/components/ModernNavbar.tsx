@@ -32,6 +32,33 @@ export default function ModernNavbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur-md pt-[env(safe-area-inset-top)]">
+      {/* Top bar: contact + primary CTA (Surjen-style) */}
+      <div className="border-b border-slate-100 bg-slate-50">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 sm:px-5 md:px-6">
+          <a
+            href="tel:+2348012345678"
+            className="text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm"
+          >
+            Call us: 08012345678
+          </a>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/about"
+              className="text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm"
+            >
+              Contact
+            </Link>
+            <a
+              href="https://calendly.com/drsamsonolori"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="rounded-full bg-orange-500 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-orange-600"
+            >
+              Book a consultation
+            </a>
+          </div>
+        </div>
+      </div>
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-5 md:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3" aria-label="Dr Samson Olori home">
           <Image

@@ -167,7 +167,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">
         <ModernNavbar />
-        <div className="flex-1 pt-14 sm:pt-16">{children}</div>
+        <div className="flex-1 pt-20 sm:pt-24">{children}</div>
         <ModernFooter />
       </body>
     </html>

@@ -119,6 +119,51 @@ export default function AboutContent() {
         </div>
       </section>
 
+      {/* FAQs */}
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 md:px-6 md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+            FAQs
+          </p>
+          <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
+            Questions families often ask
+          </h2>
+          <div className="mt-6 space-y-4 sm:mt-8">
+            <details className="group rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-slate-900">
+                Where do you see patients?
+                <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
+              </summary>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700">
+                I primarily see patients at the University of Abuja Teaching Hospital. In selected situations I may
+                consult in other centres in Abuja, Lagos or across Nigeria as part of a multidisciplinary team.
+              </p>
+            </details>
+            <details className="group rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-slate-900">
+                Do you only operate on children?
+                <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
+              </summary>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700">
+                My core training is in paediatric surgery—newborns, infants and children. In some circumstances I also
+                advise adults with conditions that overlap with paediatric surgical expertise.
+              </p>
+            </details>
+            <details className="group rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-slate-900">
+                How do we book a consultation?
+                <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
+              </summary>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700">
+                You can start by booking a time via my online calendar or by contacting the hospital where I practise.
+                If you are unsure where to begin, use the &quot;Book a consultation&quot; button on this site and share a
+                brief summary of the situation.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 md:px-6 md:py-20">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
