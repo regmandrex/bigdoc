@@ -247,26 +247,30 @@ export default function HomePage() {
                   title: 'Congenital anomalies',
                   body: 'Conditions present from birth such as abdominal wall defects, intestinal obstruction and more.',
                   icon: 'anomaly',
+                  image: '/assets/images/case-congenital.png',
                 },
                 {
                   title: 'Neonatal & infant surgery',
                   body: 'Specialised surgery for newborns and infants requiring early intervention.',
                   icon: 'infant',
+                  image: '/assets/images/case-neonatal.png',
                 },
                 {
                   title: 'Paediatric tumours',
                   body: 'Evaluation and surgical care for childhood tumours in collaboration with oncology teams.',
                   icon: 'tumour',
+                  image: '/assets/images/case-tumour.png',
                 },
                 {
                   title: 'Other common conditions',
                   body: 'Hernias, appendicitis, thyroid surgery and other routine paediatric and general surgical cases, including second opinions.',
                   icon: 'second',
+                  image: '/assets/images/case-common.png',
                 },
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:border-sky-300 hover:shadow-md"
+                  className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-sky-300 hover:shadow-md"
                 >
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
                     {item.icon === 'anomaly' && (
@@ -295,7 +299,16 @@ export default function HomePage() {
                     )}
                   </span>
                   <p className="mt-3 text-sm font-semibold text-slate-900">{item.title}</p>
-                  <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-600">{item.body}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-600">{item.body}</p>
+                  <div className="mt-4 aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
+                    <Image
+                      src={item.image}
+                      alt=""
+                      width={400}
+                      height={300}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                   <a
                     href="https://calendly.com/drsamsonolori"
                     target="_blank"
