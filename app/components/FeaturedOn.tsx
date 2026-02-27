@@ -1,5 +1,9 @@
 import Image from 'next/image';
 
+// Tiny gray blur for smoother logo load (prevents '?' flash)
+const BLUR_DATA =
+  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQACEQADAPEA/9k=';
+
 const featured: Array<{
   name: string;
   longName: string;
@@ -83,7 +87,7 @@ export default function FeaturedOn() {
           {featured.map((item) => (
             <div
               key={item.name}
-              className="flex items-center justify-center transition-transform duration-200 hover:scale-110"
+              className="flex min-h-[40px] min-w-[96px] items-center justify-center rounded-xl bg-slate-50 px-4 py-3 transition-transform duration-200 hover:scale-110 hover:bg-slate-100"
               title={item.longName}
             >
               {item.logo ? (
@@ -93,7 +97,12 @@ export default function FeaturedOn() {
                   width={item.width ?? 120}
                   height={item.height ?? 40}
                   loading="lazy"
-                  className="h-9 w-auto max-w-[140px] object-contain sm:h-10 md:h-12 md:max-w-none"
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA}
+                  className="h-9 w-auto max-w-[140px] object-contain opacity-0 transition-opacity duration-300 sm:h-10 md:h-12 md:max-w-none"
+                  onLoadingComplete={(img) => {
+                    img.classList.remove('opacity-0');
+                  }}
                 />
               ) : (
                 <span className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-semibold text-slate-600">

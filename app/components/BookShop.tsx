@@ -31,7 +31,10 @@ export default function BookShop() {
                   alt="Faith For Prosperity: The Missing Link"
                   width={320}
                   height={450}
-                  className="h-auto w-full object-contain"
+                  className="h-auto w-full object-contain opacity-0 transition-opacity duration-300"
+                  onLoadingComplete={(img) => {
+                    img.classList.remove('opacity-0');
+                  }}
                 />
               </div>
             </div>
@@ -85,7 +88,10 @@ export default function BookShop() {
                   alt="Inherit A Blessing"
                   width={320}
                   height={450}
-                  className="h-auto w-full object-contain"
+                  className="h-auto w-full object-contain opacity-0 transition-opacity duration-300"
+                  onLoadingComplete={(img) => {
+                    img.classList.remove('opacity-0');
+                  }}
                 />
               </div>
             </div>
