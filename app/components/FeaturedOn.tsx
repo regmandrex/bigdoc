@@ -99,10 +99,7 @@ export default function FeaturedOn() {
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL={BLUR_DATA}
-                  className="h-9 w-auto max-w-[140px] object-contain opacity-0 transition-opacity duration-300 sm:h-10 md:h-12 md:max-w-none"
-                  onLoadingComplete={(img) => {
-                    img.classList.remove('opacity-0');
-                  }}
+                  className="h-9 w-auto max-w-[140px] object-contain sm:h-10 md:h-12 md:max-w-none"
                 />
               ) : (
                 <span className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-semibold text-slate-600">

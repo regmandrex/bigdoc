@@ -292,10 +292,7 @@ export default function HomePage() {
                   height={360}
                   placeholder="blur"
                   blurDataURL={BLUR_DATA}
-                  className="h-auto w-full rounded-md object-contain opacity-0 transition-opacity duration-300"
-                  onLoadingComplete={(img) => {
-                    img.classList.remove('opacity-0');
-                  }}
+                  className="h-auto w-full rounded-md object-contain"
                 />
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Faith For Prosperity
@@ -310,10 +307,7 @@ export default function HomePage() {
                   height={360}
                   placeholder="blur"
                   blurDataURL={BLUR_DATA}
-                  className="h-auto w-full rounded-md object-contain opacity-0 transition-opacity duration-300"
-                  onLoadingComplete={(img) => {
-                    img.classList.remove('opacity-0');
-                  }}
+                  className="h-auto w-full rounded-md object-contain"
                 />
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Inherit A Blessing
