@@ -187,117 +187,125 @@ export default function HomePage() {
             Looking for hassle-free surgery or specialist care in Nigeria?
           </h2>
 
-          {/* Steps – how it works (icon-based like Surjen, no numbers) */}
-          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-5">
-            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
-                {/* Icon: form/query */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <rect x="5" y="3" width="14" height="18" rx="2" />
-                  <path d="M9 7h6M8 11h4M8 15h3" />
-                </svg>
+          {/* Steps – how it works (Surjen-style: centered cards, light blue icon boxes) */}
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-5 py-6 shadow-sm text-center">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-sky-200 bg-sky-50 overflow-hidden" aria-hidden>
+                <Image src="/assets/icons/step-1.png" alt="" width={48} height={48} className="h-6 w-6 object-contain" />
               </span>
-              <p className="mt-3 text-sm font-semibold text-slate-900">Send your medical query</p>
+              <p className="mt-4 text-sm font-semibold text-slate-900">Send us your medical query</p>
               <p className="mt-1 text-xs leading-relaxed text-slate-600">
                 Share your child&apos;s or loved one&apos;s situation and any reports you have.
               </p>
             </div>
-            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
-                {/* Icon: doctor review */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <circle cx="12" cy="7" r="3" />
-                  <path d="M6 19v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1" />
-                  <path d="M10 11.5h4" />
-                </svg>
+            <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-5 py-6 shadow-sm text-center">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-sky-200 bg-sky-50 overflow-hidden" aria-hidden>
+                <Image src="/assets/icons/step-2.png" alt="" width={48} height={48} className="h-6 w-6 object-contain" />
               </span>
-              <p className="mt-3 text-sm font-semibold text-slate-900">We review your case</p>
+              <p className="mt-4 text-sm font-semibold text-slate-900">We evaluate your query</p>
               <p className="mt-1 text-xs leading-relaxed text-slate-600">
-                Dr. Olori evaluates your query and advises tests or next steps.
+                Dr. Olori and team review your case and advise tests or next steps.
               </p>
             </div>
-            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
-                {/* Icon: calendar / schedule */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <rect x="4" y="5" width="16" height="15" rx="2" />
-                  <path d="M9 3v4M15 3v4M4 10h16" />
-                </svg>
+            <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-5 py-6 shadow-sm text-center">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-sky-200 bg-sky-50 overflow-hidden" aria-hidden>
+                <Image src="/assets/icons/step-3.png" alt="" width={48} height={48} className="h-6 w-6 object-contain" />
               </span>
-              <p className="mt-3 text-sm font-semibold text-slate-900">We plan your visit</p>
+              <p className="mt-4 text-sm font-semibold text-slate-900">We book you for a physical consultation</p>
               <p className="mt-1 text-xs leading-relaxed text-slate-600">
-                Agree a suitable hospital, date and team for any needed procedure.
+                Agree a suitable hospital, date and team for your visit.
               </p>
             </div>
-            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
-                {/* Icon: hospital / surgery */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <rect x="5" y="4" width="14" height="16" rx="2" />
-                  <path d="M12 8v6M9 11h6" />
-                </svg>
+            <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-5 py-6 shadow-sm text-center">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-sky-200 bg-sky-50 overflow-hidden" aria-hidden>
+                <Image src="/assets/icons/step-4.png" alt="" width={48} height={48} className="h-6 w-6 object-contain" />
               </span>
-              <p className="mt-3 text-sm font-semibold text-slate-900">Surgery &amp; hospital care</p>
+              <p className="mt-4 text-sm font-semibold text-slate-900">We plan and book your surgery/treatment</p>
               <p className="mt-1 text-xs leading-relaxed text-slate-600">
                 You receive compassionate, expert care at the selected centre.
               </p>
             </div>
-            <div className="flex flex-col items-start rounded-2xl bg-slate-50 px-5 py-5 shadow-sm sm:col-span-3 lg:col-span-1">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
-                {/* Icon: heart / follow-up */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <path d="M12.1 19.2 12 19.3l-0.1-0.1C7 15.3 4 12.6 4 9.5 4 7.5 5.5 6 7.5 6c1.3 0 2.6.7 3.3 1.9C11.9 6.7 13.2 6 14.5 6 16.5 6 18 7.5 18 9.5c0 3.1-3 5.8-5.9 9.7Z" />
-                </svg>
+            <div className="flex flex-col items-center rounded-2xl bg-slate-50 px-5 py-6 shadow-sm text-center sm:col-span-2 md:col-span-1">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-sky-200 bg-sky-50 overflow-hidden" aria-hidden>
+                <Image src="/assets/icons/step-5.png" alt="" width={48} height={48} className="h-6 w-6 object-contain" />
               </span>
-              <p className="mt-3 text-sm font-semibold text-slate-900">Follow-up &amp; support</p>
+              <p className="mt-4 text-sm font-semibold text-slate-900">Post surgery/treatment follow-up</p>
               <p className="mt-1 text-xs leading-relaxed text-slate-600">
-                Post-surgery reviews, wound care and long-term follow-up as needed.
+                Reviews, wound care and long-term follow-up as needed.
               </p>
             </div>
           </div>
 
-          {/* Typical cases – horizontal scroll cards, no pricing */}
+          {/* Typical cases – grid cards, no pricing */}
           <div className="mt-10">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
               Typical cases we see
             </p>
-            <div className="mt-4 -mx-4 overflow-x-auto pb-2 sm:mx-0 sm:overflow-visible">
-              <div className="flex gap-4 px-4 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-0">
-                {[
-                  {
-                    title: 'Congenital anomalies',
-                    body: 'Conditions present from birth such as abdominal wall defects, intestinal obstruction and more.',
-                  },
-                  {
-                    title: 'Neonatal & infant surgery',
-                    body: 'Specialised surgery for newborns and infants requiring early intervention.',
-                  },
-                  {
-                    title: 'Paediatric tumours',
-                    body: 'Evaluation and surgical care for childhood tumours in collaboration with oncology teams.',
-                  },
-                  {
-                    title: 'Second opinions',
-                    body: 'Clarifying diagnoses, treatment options and timing of surgery for complex cases.',
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.title}
-                    className="flex min-w-[260px] flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:border-sky-300 hover:shadow-md"
+            <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {[
+                {
+                  title: 'Congenital anomalies',
+                  body: 'Conditions present from birth such as abdominal wall defects, intestinal obstruction and more.',
+                  icon: 'anomaly',
+                },
+                {
+                  title: 'Neonatal & infant surgery',
+                  body: 'Specialised surgery for newborns and infants requiring early intervention.',
+                  icon: 'infant',
+                },
+                {
+                  title: 'Paediatric tumours',
+                  body: 'Evaluation and surgical care for childhood tumours in collaboration with oncology teams.',
+                  icon: 'tumour',
+                },
+                {
+                  title: 'Other common conditions',
+                  body: 'Hernias, appendicitis, thyroid surgery and other routine paediatric and general surgical cases, including second opinions.',
+                  icon: 'second',
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:border-sky-300 hover:shadow-md"
+                >
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600" aria-hidden>
+                    {item.icon === 'anomaly' && (
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M12 3 4 8v8l8 5 8-5V8Z" />
+                        <path d="M9 12h6M12 9v6" />
+                      </svg>
+                    )}
+                    {item.icon === 'infant' && (
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <circle cx="12" cy="8" r="3" />
+                        <path d="M6 19a6 6 0 0 1 12 0" />
+                      </svg>
+                    )}
+                    {item.icon === 'tumour' && (
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <circle cx="12" cy="12" r="5" />
+                        <path d="M12 3v2M5 7l1.5 1.5M19 7 17.5 8.5M5 17l1.5-1.5M19 17 17.5 15.5" />
+                      </svg>
+                    )}
+                    {item.icon === 'second' && (
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                        <path d="M8 5h9M8 9h5" />
+                        <path d="M7 5a3 3 0 0 0-3 3v8.5a1.5 1.5 0 0 0 2.56 1.06L8.5 18H17a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3" />
+                      </svg>
+                    )}
+                  </span>
+                  <p className="mt-3 text-sm font-semibold text-slate-900">{item.title}</p>
+                  <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-600">{item.body}</p>
+                  <a
+                    href="https://calendly.com/drsamsonolori"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="mt-4 inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-600"
                   >
-                    <p className="text-sm font-semibold text-slate-900">{item.title}</p>
-                    <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-600">{item.body}</p>
-                    <a
-                      href="https://calendly.com/drsamsonolori"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="mt-4 inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-600"
-                    >
-                      Schedule a consultation →
-                    </a>
-                  </div>
-                ))}
-              </div>
+                    Schedule a consultation →
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>
