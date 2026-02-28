@@ -326,7 +326,7 @@ export default function HomePage() {
 
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
             In the media
           </p>
           <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
@@ -356,7 +356,7 @@ export default function HomePage() {
 
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
             His Work
           </p>
           <div className="mt-3 flex items-center gap-3">
@@ -368,7 +368,7 @@ export default function HomePage() {
               className="h-10 w-10 shrink-0 object-contain"
             />
             <h2 className="font-heading text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl md:text-3xl">
-              Clinical excellence and prophetic insight.
+              Clinical excellence and compassionate care.
             </h2>
           </div>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
@@ -420,7 +420,7 @@ export default function HomePage() {
             <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white px-5 py-7 shadow-sm sm:px-7 sm:py-9 md:px-10 md:py-10">
               <div className="grid gap-6 sm:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] sm:gap-8">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                     Media &amp; recognition
                   </p>
                   <h3 className="mt-3 font-heading text-xl font-semibold tracking-tight text-slate-950 sm:text-2xl">
@@ -447,7 +447,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="space-y-3 text-sm text-slate-600">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                     Research &amp; global surgery
                   </p>
                   <p>
