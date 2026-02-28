@@ -105,7 +105,7 @@ export default function HomePage() {
                 Schedule a one-on-one—medical guidance, spiritual counsel, or both.
               </p>
               <a
-                href="https://calendly.com/drsamsonolori"
+                href="https://wa.me/message/GT2PHDYFMQWZE1"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-orange-500 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-orange-600"
@@ -310,7 +310,7 @@ export default function HomePage() {
                     />
                   </div>
                   <a
-                    href="https://calendly.com/drsamsonolori"
+                    href="https://wa.me/message/GT2PHDYFMQWZE1"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="mt-4 inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-600"
@@ -587,9 +587,9 @@ export default function HomePage() {
                 Let&apos;s Talk
               </Link>
               <a
-                href="https://calendly.com/drsamsonolori"
+                href="https://wa.me/message/GT2PHDYFMQWZE1"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full bg-orange-500 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-slate-950 sm:w-auto"
               >
                 Book a consultation

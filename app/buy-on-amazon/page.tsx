@@ -38,7 +38,7 @@ export default function BuyOnAmazonPage() {
               <a
                 href="https://www.amazon.com/s?k=samson+olori&i=digital-text&crid=25FZNH39CI52U&sprefix=samson+olori%2Cdigital-text%2C627&ref=nb_sb_noss"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
               >
                 Buy on Amazon

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function ModernFooter() {
-  const calendlyUrl = 'https://calendly.com/drsamsonolori';
+  const whatsappUrl = 'https://wa.me/message/GT2PHDYFMQWZE1';
 
   return (
     <footer className="border-t border-slate-200 bg-slate-950 text-slate-200">
@@ -57,7 +57,7 @@ export default function ModernFooter() {
                 </Link>
               </li>
               <li>
-                <a href={calendlyUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 transition hover:text-white">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-slate-300 transition hover:text-white">
                   Book a consultation
                 </a>
               </li>
@@ -81,7 +81,7 @@ export default function ModernFooter() {
             </p>
             <p className="mt-3">
               <a
-                href={calendlyUrl}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-orange-500 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-orange-600"

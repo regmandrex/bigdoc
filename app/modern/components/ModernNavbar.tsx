@@ -36,10 +36,10 @@ export default function ModernNavbar() {
       <div className="border-b border-slate-100 bg-slate-50">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 sm:px-5 md:px-6">
           <a
-            href="tel:+2348012345678"
+            href="tel:+2347088406610"
             className="text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm"
           >
-            Call us: 08012345678
+            Call us: +234 708 840 6610
           </a>
           <div className="flex items-center gap-4">
             <Link
@@ -49,7 +49,7 @@ export default function ModernNavbar() {
               Contact
             </Link>
             <a
-              href="https://calendly.com/drsamsonolori"
+              href="https://wa.me/message/GT2PHDYFMQWZE1"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="rounded-full bg-orange-500 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-orange-600"
@@ -123,12 +123,14 @@ export default function ModernNavbar() {
               </div>
             </div>
           </div>
-          <Link
-            href="/about"
+          <a
+            href="https://wa.me/message/GT2PHDYFMQWZE1"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className="rounded-full bg-slate-950 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-slate-800"
           >
             Let&apos;s Talk
-          </Link>
+          </a>
         </div>
         <button
           type="button"
@@ -207,13 +209,15 @@ export default function ModernNavbar() {
                 </div>
               )}
             </div>
-            <Link
-              href="/about"
+            <a
+              href="https://wa.me/message/GT2PHDYFMQWZE1"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
               className="mt-2 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-slate-800"
               onClick={() => setOpen(false)}
             >
               Let&apos;s Talk
-            </Link>
+            </a>
           </div>
         </div>
       )}
