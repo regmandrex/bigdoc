@@ -8,12 +8,16 @@ const nextConfig = {
     ];
   },
   images: {
+    qualities: [75, 92],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
         pathname: '/**',
       },
+    ],
+    localPatterns: [
+      { pathname: '/assets/**' },
     ],
   },
 };

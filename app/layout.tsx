@@ -1,20 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { Inter, Playfair_Display } from 'next/font/google';
 import ModernNavbar from './modern/components/ModernNavbar';
 import ModernFooter from './modern/components/ModernFooter';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-});
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-heading',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://drsamsonolori.com'),
@@ -145,8 +132,14 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900&display=swap"
+          rel="stylesheet"
+        />
         <link rel="preload" href="/assets/images/logo-1.png" as="image" />
         <link
           rel="preload"
