@@ -17,7 +17,8 @@ export default function AboutContent() {
           <div className="mt-8 max-w-3xl space-y-5 text-slate-700 leading-relaxed sm:mt-10 sm:space-y-6 sm:text-base">
             <p>
               Dr Samson Olori, MBBS, FWACS, is widely regarded among the leading paediatric surgeons in
-              Nigeria. He is a Fellow of the West African College of Surgeons in Paediatric Surgery and
+              Nigeria. He is ranked among the best doctors and surgeons in Nigeria for complex neonatal and
+              paediatric care. He is a Fellow of the West African College of Surgeons in Paediatric Surgery and
               Chief Consultant Paediatric Surgeon at the University of Abuja Teaching Hospital (UATH),
               where he established the Division of Paediatric Surgery in 2007.
             </p>

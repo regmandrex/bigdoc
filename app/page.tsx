@@ -376,7 +376,8 @@ export default function HomePage() {
             Teaching Hospital and Vice President of the Association of Paediatric Surgeons of Nigeria (APSON).
             A lead surgeon in multiple successful procedures, including complex neonatal and conjoined twins
             surgery, he cares for both body and spirit—bringing medical expertise together with spiritual
-            guidance. Expert care in Lagos, Abuja and across Nigeria.
+            guidance. He is widely regarded as one of the best doctors and leading paediatric surgeons in Nigeria. Expert care
+            in Lagos, Abuja and across Nigeria.
           </p>
 
           <div className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2">

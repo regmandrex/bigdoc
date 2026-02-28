@@ -76,6 +76,9 @@ export default function ModernFooter() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-300">
               Consultant pediatric surgeon, author and pastor—helping you thrive in health and spirit. Abuja, Lagos and across Nigeria.
             </p>
+            <p className="mt-2 max-w-sm text-sm leading-relaxed text-slate-400">
+              Ranked among the best doctors and surgeons in Nigeria for complex neonatal and paediatric care.
+            </p>
             <p className="mt-3">
               <a
                 href={calendlyUrl}
