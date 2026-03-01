@@ -15,30 +15,28 @@ export default function HomePage() {
           <div className="order-1 w-full md:order-2 md:flex-1 md:max-w-md">
             <div className="relative w-full md:mx-auto md:max-w-sm">
               {/* Mobile: pre-cropped image (head + lapels only) */}
-              <div className="relative w-full md:hidden bg-slate-200">
+              <div className="relative w-full md:hidden bg-gray-200">
                 <Image
                   src="/assets/images/ochuko-2-mobile.png?v=6"
                   alt="Dr Samson Olori"
                   width={520}
                   height={416}
                   quality={92}
-                  placeholder="blur"
-                  blurDataURL={BLUR_DATA}
+                  placeholder="empty"
                   className="h-auto w-full object-cover object-top"
                   priority
                   sizes="100vw"
                 />
               </div>
               {/* Desktop: full portrait */}
-              <div className="relative hidden aspect-[13/16] w-full bg-slate-200 md:block">
+              <div className="relative hidden aspect-[13/16] w-full bg-gray-200 md:block">
                 <Image
                   src="/assets/images/ochuko-2.png"
                   alt="Dr Samson Olori"
                   width={520}
                   height={640}
                   quality={92}
-                  placeholder="blur"
-                  blurDataURL={BLUR_DATA}
+                  placeholder="empty"
                   className="h-full w-full object-cover object-top"
                   priority
                   sizes="384px"

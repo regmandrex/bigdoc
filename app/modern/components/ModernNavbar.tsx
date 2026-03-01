@@ -37,17 +37,11 @@ export default function ModernNavbar() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 sm:px-5 md:px-6">
           <a
             href="tel:+2347088406610"
-            className="text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm"
+            className="shrink-0 text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm whitespace-nowrap"
           >
             Call us: +234 708 840 6610
           </a>
           <div className="flex items-center gap-4">
-            <Link
-              href="/about"
-              className="text-xs font-medium text-slate-600 transition hover:text-slate-950 sm:text-sm"
-            >
-              Contact
-            </Link>
             <a
               href="https://wa.me/message/GT2PHDYFMQWZE1"
               target="_blank"
