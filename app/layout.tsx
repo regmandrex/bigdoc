@@ -163,6 +163,7 @@ export default function RootLayout({
           as="image"
           media="(min-width: 768px)"
         />
+        <link rel="alternate" type="application/rss+xml" title="Dr Samson Olori – RSS Feed" href="/rss.xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
