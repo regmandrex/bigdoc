@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://drsamsonolori.com'),
   title: {
     default: 'Dr Samson Olori | Consultant Paediatric Surgeon | Abuja, Nigeria',
-    template: '%s | Dr Samson Olori',
+    template: '%s | Dr Samson Olori – Paediatric Surgeon Abuja, Nigeria',
   },
   description:
     'Dr. Samson Olori is one of the best doctors and surgeons in Nigeria—Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Lagos, Abuja and across Nigeria.',
@@ -74,6 +74,21 @@ export default function RootLayout({
       'One of the best doctors and surgeons in Nigeria. Abuja-based consultant pediatric surgeon, author and pastor. Expert care in Lagos, Abuja and across Nigeria.',
     url: 'https://drsamsonolori.com',
     image: 'https://drsamsonolori.com/assets/images/ochuko-2.png',
+    worksFor: [
+      {
+        '@type': 'Hospital',
+        name: 'University of Abuja Teaching Hospital',
+        address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
+      },
+      {
+        '@type': 'MedicalBusiness',
+        name: 'Triumphant Medical Consult Limited',
+        url: 'https://drsamsonolori.com',
+        telephone: '+2347088406610',
+        address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
+        medicalSpecialty: 'https://schema.org/Pediatric',
+      },
+    ],
     sameAs: [
       'https://independent.academia.edu/SamsonOlori',
       'https://x.com/oloriDr',
@@ -109,11 +124,6 @@ export default function RootLayout({
         address: { '@type': 'PostalAddress', addressLocality: 'Jos', addressCountry: 'NG' },
       },
     ],
-    worksFor: {
-      '@type': 'Hospital',
-      name: 'University of Abuja Teaching Hospital',
-      address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' },
-    },
     affiliation: {
       '@type': 'Hospital',
       name: 'University of Abuja Teaching Hospital',
@@ -156,6 +166,27 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'MedicalBusiness',
+              name: 'Triumphant Medical Consult Limited',
+              description:
+                'Private medical practice in Abuja offering paediatric surgery, neurosurgery and specialist surgical care. Consultant surgeons and expert team.',
+              url: 'https://drsamsonolori.com',
+              telephone: '+2347088406610',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Abuja',
+                addressCountry: 'NG',
+              },
+              medicalSpecialty: ['https://schema.org/Pediatric', 'https://schema.org/Surgical'],
+              areaServed: [{ '@type': 'Country', name: 'Nigeria' }, { '@type': 'City', name: 'Abuja' }],
+            }),
+          }}
         />
       </head>
       <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">
