@@ -432,6 +432,12 @@ export default function HomePage() {
                     input and a 30-person team in theatre.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
+                    <Link
+                      href="/conjoined-twins-surgery"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-sky-600 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2"
+                    >
+                      Conjoined twins surgery
+                    </Link>
                     <a
                       href="/assets/documents/uath-conjoined-twins-bulletin.pdf"
                       target="_blank"
