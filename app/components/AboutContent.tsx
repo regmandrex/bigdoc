@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Testimonials from './Testimonials';
 
 export default function AboutContent() {
   return (
@@ -191,6 +192,8 @@ export default function AboutContent() {
           </div>
         </div>
       </section>
+      
+      <Testimonials />
 
       <section className="bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 md:px-6 md:py-20">

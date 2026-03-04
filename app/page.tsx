@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import FeaturedOn from './components/FeaturedOn';
+import Testimonials from './components/Testimonials';
 
 // Tiny gray blur for smooth image load (no white flash)
 const BLUR_DATA =
@@ -321,6 +322,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-14 md:px-6 md:py-16">
