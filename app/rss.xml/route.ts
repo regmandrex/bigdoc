@@ -1,50 +1,20 @@
 import { NextResponse } from 'next/server';
+import { PROCEDURES_LIST } from '@/lib/surgery-procedures';
+import { STATIC_ROUTES } from '@/lib/site-routes';
 
 const baseUrl = 'https://drsamsonolori.com';
 
+/** Only procedures that live under /surgery/[slug] (excludes conjoined-twins which is static) */
+const surgeryProcedureEntries = PROCEDURES_LIST.filter((p) => p.href.startsWith('/surgery/')).map((p) => ({
+  title: p.metaTitle ?? p.title,
+  description: p.metaDescription,
+  path: p.href,
+}));
+
+/** Every page on the site: static routes + all surgery procedure pages. One source of truth with site-routes. */
 const feedEntries = [
-  {
-    title: 'Dr Samson Olori | Consultant Paediatric Surgeon | Abuja, Nigeria',
-    description:
-      'Abuja-based consultant paediatric surgeon, author and pastor. Expert care in paediatric surgery across Nigeria.',
-    path: '/',
-  },
-  {
-    title: 'About',
-    description: 'Dr Samson Olori – Chief Consultant Paediatric Surgeon at UATH. Among the best doctors and surgeons in Nigeria.',
-    path: '/about',
-  },
-  {
-    title: 'Conjoined Twins Surgery',
-    description:
-      'Dr Samson Olori led the first successful conjoined twins separation at UATH. Expert conjoined twins surgery in Abuja and Nigeria.',
-    path: '/conjoined-twins-surgery',
-  },
-  {
-    title: 'How Dr Samson Olori Led the First Conjoined Twins Separation in Abuja',
-    description: 'The 2018 surgery was the first successful separation at University of Abuja Teaching Hospital.',
-    path: '/first-conjoined-twins-separation-abuja',
-  },
-  {
-    title: 'First Paediatric Surgeon in Abuja to Perform Successful Conjoined Twins Operation',
-    description: 'Huge milestone: Dr Samson Olori led the historic surgery at UATH in 2018.',
-    path: '/first-paediatric-surgeon-abuja-conjoined-twins',
-  },
-  {
-    title: 'Dr Samson Olori Led First Ever Successful Conjoined Twins Surgery in Northern Nigeria',
-    description: 'Historic milestone for paediatric surgery in northern Nigeria at UATH Abuja in 2018.',
-    path: '/first-conjoined-twins-surgery-northern-nigeria',
-  },
-  {
-    title: 'Buy Now',
-    description: 'Explore books by Dr Samson Olori.',
-    path: '/buy-now',
-  },
-  {
-    title: 'Buy on Amazon',
-    description: 'Dr Samson Olori books on Amazon.',
-    path: '/buy-on-amazon',
-  },
+  ...STATIC_ROUTES.map((r) => ({ title: r.title, description: r.description, path: r.path })),
+  ...surgeryProcedureEntries,
 ];
 
 function escapeXml(unsafe: string): string {
