@@ -1,9 +1,16 @@
 import type { MetadataRoute } from 'next';
+import { getSurgeryDetailSlugs } from '@/lib/surgery-procedures';
 
 const baseUrl = 'https://drsamsonolori.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const surgeryDetailEntries = getSurgeryDetailSlugs().map((slug) => ({
+    url: `${baseUrl}/surgery/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
   return [
     {
       url: baseUrl,
@@ -18,11 +25,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/surgery`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/conjoined-twins-surgery`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    ...surgeryDetailEntries,
     {
       url: `${baseUrl}/first-conjoined-twins-separation-abuja`,
       lastModified: now,

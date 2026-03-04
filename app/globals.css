@@ -15,7 +15,7 @@ html {
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip avoids breaking position:sticky in children */
 }
 
 body {
@@ -25,4 +25,12 @@ body {
 /* Smoother image appearance (Next.js Image uses placeholder blur) */
 img {
   @apply transition-opacity duration-500 ease-out;
+}
+
+/* Surgery detail sidebar: force sticky so it stays visible when scrolling */
+.surgery-detail-sidebar {
+  position: sticky !important;
+  top: 6rem; /* below fixed navbar */
+  z-index: 10;
+  align-self: flex-start;
 }

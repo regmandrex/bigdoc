@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import SurgeryDetailSidebar from '@/app/surgery/components/SurgeryDetailSidebar';
 
 export const metadata: Metadata = {
   title: 'Conjoined Twins Surgery',
@@ -37,6 +38,11 @@ export default function ConjoinedTwinsSurgeryPage() {
         </div>
       </section>
 
+      {/* Main content + sidebar (two-column on desktop) */}
+      <section className="border-b border-slate-200 bg-slate-50 overflow-visible">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-5 sm:py-12 md:px-6 md:py-14 overflow-visible">
+          <div className="grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
+            <div className="min-w-0">
       {/* BBC News video – prominent placement */}
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 md:px-6 md:py-20">
@@ -214,6 +220,15 @@ export default function ConjoinedTwinsSurgeryPage() {
             >
               About Dr Olori
             </Link>
+          </div>
+        </div>
+      </section>
+            </div>
+            <SurgeryDetailSidebar
+              title="Conjoined twins surgery"
+              image="/assets/images/conjoined-twins/separation-in-pictures.png"
+              imageAlt="Conjoined twins separation – expert care in Abuja and Nigeria"
+            />
           </div>
         </div>
       </section>

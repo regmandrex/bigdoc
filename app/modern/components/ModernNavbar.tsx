@@ -11,6 +11,11 @@ const mainLinks = [
   { href: '/about', label: 'About Us' },
 ];
 
+const ourServicesDropdown = [
+  { href: '/surgery', label: 'Surgery' },
+  { href: '/conjoined-twins-surgery', label: 'Conjoined twins surgery' },
+];
+
 const booksDropdown = [
   { href: '/buy-now', label: 'Buy now' },
   { href: '/buy-on-amazon', label: 'Buy on Amazon' },
@@ -20,9 +25,11 @@ export default function ModernNavbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [booksOpen, setBooksOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const isActive = (href: string) => pathname === href;
   const isBooksActive = booksDropdown.some((d) => d.href === pathname);
+  const isServicesActive = ourServicesDropdown.some((d) => d.href === pathname);
 
   useEffect(() => {
     if (open) document.body.style.overflow = 'hidden';
@@ -85,6 +92,38 @@ export default function ModernNavbar() {
               {link.label}
             </Link>
           ))}
+          <div className="relative group">
+            <button
+              type="button"
+              className={clsx(
+                'flex items-center gap-1 py-2 transition-colors hover:text-slate-950',
+                isServicesActive && 'font-semibold text-slate-950'
+              )}
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Services
+              <svg className="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="invisible absolute left-0 top-full pt-1 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="min-w-[200px] rounded-lg border border-slate-200 bg-white py-1 shadow-lg">
+                {ourServicesDropdown.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={clsx(
+                      'block px-4 py-2.5 text-sm transition hover:bg-slate-50 hover:text-slate-950',
+                      isActive(item.href) && 'font-semibold text-slate-950 bg-slate-50'
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
           <div className="relative group">
             <button
               type="button"
@@ -171,6 +210,38 @@ export default function ModernNavbar() {
                 {link.label}
               </Link>
             ))}
+            <div>
+              <button
+                type="button"
+                className="flex w-full items-center justify-between rounded-lg py-3.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-950"
+                onClick={() => setServicesOpen((v) => !v)}
+                aria-expanded={servicesOpen}
+              >
+                Our Services
+                <svg
+                  className={clsx('h-4 w-4 transition-transform', servicesOpen && 'rotate-180')}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {servicesOpen && (
+                <div className="pl-3 pb-2 flex flex-col gap-0.5">
+                  {ourServicesDropdown.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="rounded-lg py-2.5 pl-3 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-slate-950"
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <div>
               <button
                 type="button"

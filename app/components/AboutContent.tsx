@@ -136,8 +136,8 @@ export default function AboutContent() {
                 <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
               </summary>
               <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                I primarily see patients at the University of Abuja Teaching Hospital. In selected situations I may
-                consult in other centres in Abuja, Lagos or across Nigeria as part of a multidisciplinary team.
+                I see most patients at the University of Abuja Teaching Hospital. In some situations, I also review
+                patients in other centres in Abuja or across Nigeria when invited as part of a multidisciplinary team.
               </p>
             </details>
             <details className="group rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
@@ -146,8 +146,9 @@ export default function AboutContent() {
                 <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
               </summary>
               <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                My core training is in paediatric surgery—newborns, infants and children. In some circumstances I also
-                advise adults with conditions that overlap with paediatric surgical expertise.
+                Together with my colleagues, I care for both children and adults. We have particular expertise in
+                complex neonatal and paediatric surgery, and we also manage selected adult surgical cases where our
+                skills and experience are most relevant.
               </p>
             </details>
             <details className="group rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
@@ -156,11 +157,37 @@ export default function AboutContent() {
                 <span className="text-xs text-slate-500 group-open:rotate-90 transition-transform">›</span>
               </summary>
               <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                You can start by booking a time via my online calendar or by contacting the hospital where I practise.
-                If you are unsure where to begin, use the &quot;Book a consultation&quot; button on this site and share a
-                brief summary of the situation.
+                The easiest way is to use the &quot;Book a consultation&quot; button on this site and send a brief
+                summary of the situation via WhatsApp. You can also be booked directly through the University of Abuja
+                Teaching Hospital or other hospitals where I practise.
               </p>
             </details>
+          </div>
+        </div>
+      </section>
+
+      {/* Clinic location – map embed */}
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 md:px-6 md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+            Where you can find us
+          </p>
+          <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
+            Clinic location on Google Maps
+          </h2>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base">
+            Use the map below to see our location, get directions, and plan your visit.
+          </p>
+          <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <div className="aspect-[4/3] w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.235694833217!2d7.062616699999999!3d8.950416299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e87268ce4dfe9%3A0xeff93e9553eb702e!2sDr.%20Samson%20Olori%2C%20Consultant%20Pediatric%20Surgeon!5e0!3m2!1sen!2sus!4v1772636935765!5m2!1sen!2sus"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full border-0"
+                aria-label="Clinic location on Google Maps"
+              />
+            </div>
           </div>
         </div>
       </section>
