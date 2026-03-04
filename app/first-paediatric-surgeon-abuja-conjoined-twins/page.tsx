@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'First Paediatric Surgeon in Abuja to Perform Successful Conjoined Twins Operation',
@@ -43,9 +44,11 @@ export default function FirstPaediatricSurgeonAbujaPage() {
             in the country that year—a huge milestone for paediatric surgery in the capital.
           </p>
           <div className="mt-8 max-w-2xl rounded-xl border border-slate-200 overflow-hidden bg-slate-100">
-            <img
+            <Image
               src="/assets/images/conjoined-twins/federal-govt-news.png"
               alt="Federal Government commends UATH on separation of Siamese twins – news clipping"
+              width={900}
+              height={600}
               className="w-full object-cover"
             />
           </div>

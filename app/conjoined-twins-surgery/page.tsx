@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import SurgeryDetailSidebar from '@/app/surgery/components/SurgeryDetailSidebar';
 
 export const metadata: Metadata = {
@@ -105,18 +106,20 @@ export default function ConjoinedTwinsSurgeryPage() {
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
-              {/* Add uath-bulletin-before-after.jpg to public/assets/images/conjoined-twins/ */}
-              <img
+              <Image
                 src="/assets/images/conjoined-twins/uath-bulletin-before-after.png"
                 alt="The conjoined twins before and after separation at UATH"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="h-full w-full object-cover"
               />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
-              {/* Add thirty-man-team.jpg to public/assets/images/conjoined-twins/ */}
-              <img
+              <Image
                 src="/assets/images/conjoined-twins/thirty-man-team.png"
                 alt="Some members of the 30-person surgical team that separated the conjoined twins at UATH"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -169,9 +172,11 @@ export default function ConjoinedTwinsSurgeryPage() {
             The success was attributed to teamwork across all hospital departments.
           </p>
           <div className="mt-8 max-w-4xl">
-            <img
+            <Image
               src="/assets/images/conjoined-twins/separation-in-pictures.png"
               alt="Conjoined babies' separation in pictures: surgical team, twins before surgery, preparation, and separation done"
+              width={1200}
+              height={800}
               className="w-full rounded-xl border border-slate-200 object-cover"
             />
           </div>

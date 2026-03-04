@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Dr Samson Olori Led First Ever Successful Conjoined Twins Surgery in Northern Nigeria',
@@ -45,16 +46,20 @@ export default function FirstNorthernNigeriaPage() {
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl border border-slate-200 overflow-hidden bg-slate-100">
-              <img
+              <Image
                 src="/assets/images/conjoined-twins/red-blue-teams-and-discharge.png"
                 alt="Red and Blue teams in theatre, Special Care Baby Unit, and the separated twins with their parents and UATH senior staff after discharge"
+                width={900}
+                height={600}
                 className="w-full object-cover"
               />
             </div>
             <div className="rounded-xl border border-slate-200 overflow-hidden bg-slate-100">
-              <img
+              <Image
                 src="/assets/images/conjoined-twins/staff-profile-dr-olori.png"
                 alt="Dr Samson Olori, Consultant Paediatric Surgeon – UATH staff profile"
+                width={900}
+                height={600}
                 className="w-full object-cover"
               />
             </div>

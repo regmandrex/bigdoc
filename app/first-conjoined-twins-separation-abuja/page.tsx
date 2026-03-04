@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'How Dr Samson Olori Led the First Conjoined Twins Separation in Abuja',
@@ -45,9 +46,11 @@ export default function FirstSeparationAbujaPage() {
             bill as part of its Corporate Social Responsibility.
           </p>
           <div className="mt-8 max-w-2xl rounded-xl border border-slate-200 overflow-hidden bg-slate-100">
-            <img
+            <Image
               src="/assets/images/conjoined-twins/how-we-separated-article.png"
               alt="How We Successfully Separated Conjoined Twins – news article featuring Dr Samson Olori"
+              width={900}
+              height={600}
               className="w-full object-cover"
             />
           </div>
