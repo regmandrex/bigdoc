@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import ModernNavbar from './modern/components/ModernNavbar';
 import ModernFooter from './modern/components/ModernFooter';
+import Breadcrumbs from './modern/components/Breadcrumbs';
+import ScrollToTop from './modern/components/ScrollToTop';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://drsamsonolori.com'),
@@ -191,8 +193,12 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col font-sans">
+        <ScrollToTop />
         <ModernNavbar />
-        <div className="flex-1 pt-20 sm:pt-24">{children}</div>
+        <div className="flex-1 pt-28 min-h-0 flex flex-col">
+          <Breadcrumbs />
+          {children}
+        </div>
         <ModernFooter />
       </body>
     </html>
