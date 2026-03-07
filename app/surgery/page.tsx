@@ -25,7 +25,7 @@ export default function SurgeryPage() {
             Surgery &amp; procedures
           </p>
           <h1 className="mt-3 font-heading text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
-            What we treat – expert care in Abuja &amp; Nigeria
+            Surgery &amp; procedures – expert care in Abuja &amp; Nigeria
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             From complex paediatric surgery and conjoined twins separation to general, cardiac and fertility procedures—Dr Samson Olori and his colleagues provide transparent, expert surgical care for children, adults and families.
