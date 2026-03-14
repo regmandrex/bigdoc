@@ -5,6 +5,8 @@ const nextConfig = {
     return [
       { source: '/modern', destination: '/', permanent: true },
       { source: '/modern/', destination: '/', permanent: true },
+      { source: '/surgery/aortic-valve-repairreplacement-avr', destination: '/surgery/aortic-valve-repair-replacement-avr', permanent: true },
+      { source: '/surgery/mitral-valve-repairreplacement-mvr', destination: '/surgery/mitral-valve-repair-replacement-mvr', permanent: true },
     ];
   },
   images: {

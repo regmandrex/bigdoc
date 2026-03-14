@@ -1169,12 +1169,12 @@ export const PROCEDURES_LIST: ProcedureDetail[] = [
     metaDescription: 'Coarctation of the aorta (COA) repair. Surgical and catheter options. Referral to cardiac specialists. Book a consultation.',
   },
   {
-    slug: 'mitral-valve-repairreplacement-mvr',
+    slug: 'mitral-valve-repair-replacement-mvr',
     title: 'Mitral valve repair / replacement (MVR)',
     metaTitle: 'Mitral valve repair / replacement (MVR)',
     shortDescription: 'Surgery to repair or replace the mitral valve when it is leaking or narrowed. Restores normal heart function and relieves symptoms.',
     image: '/assets/images/case-common.png',
-    href: '/surgery/mitral-valve-repairreplacement-mvr',
+    href: '/surgery/mitral-valve-repair-replacement-mvr',
     sections: [
       {
         heading: 'What is mitral valve disease?',
@@ -1198,12 +1198,12 @@ export const PROCEDURES_LIST: ProcedureDetail[] = [
     metaDescription: 'Mitral valve repair and replacement (MVR). Referral to cardiac surgery. Book a consultation.',
   },
   {
-    slug: 'aortic-valve-repairreplacement-avr',
+    slug: 'aortic-valve-repair-replacement-avr',
     title: 'Aortic valve repair / replacement (AVR)',
     metaTitle: 'Aortic valve repair / replacement (AVR)',
     shortDescription: 'Surgery to repair or replace the aortic valve when it is narrowed or leaking. Restores blood flow from the heart to the body.',
     image: '/assets/images/case-common.png',
-    href: '/surgery/aortic-valve-repairreplacement-avr',
+    href: '/surgery/aortic-valve-repair-replacement-avr',
     sections: [
       {
         heading: 'What is aortic valve disease?',
